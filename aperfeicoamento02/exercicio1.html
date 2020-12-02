@@ -1,38 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-
-	<meta charset="utf-8">
-	<title>Pilula verde ou vermelha</title>
-
+  <meta charset="utf-8">
+  <title>Exercicio 1</title>
 </head>
-		<body>
-		<h1>ESCOLHA A SUA PILULA VERMELHA OU VERDE</h1>
-	
+<body>
+  <h1>Somar dois números</h1>
+  <input type="text" id="num1">
+  <input type="text" id="num2">
+  <input type="submit" id="calcular" onclick="calcular()">
+  <div id="resultado"></div>  
 
-		<div class="topo">
-		<img src="morfeu.jpg">
-		</div>	
+  <script>
+    
+function calcular() {
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    var resultado = num1+num2
+    document.getElementById("resultado").innerHTML="<br><h1>resultado:</h1> " + resultado 
 
-		<script>
-		function VERDE () {
- 		 document.body.style.backgroundColor = "green";
+}
 
- 		}
-
- 		 function VERMELHO() {
- 		 document.body.style.backgroundColor = "red";
-		}
-</script>
-
-
-
-
-		<button type="button" onclick="VERMELHO()">Pilula Vermelha</button>
-		<button type="button" onclick="VERDE()">Pilula Verde</button>
-
-
-
-		
+  </script>
 </body>
 </html>
