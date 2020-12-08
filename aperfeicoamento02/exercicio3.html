@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercicio 3</title>
+</head>
+<body>
+  <h1>Você é maior ou menor de idade? Digite abaixo o ano do seu nascimento</h1>
+  
+    <label for="dataDeNascimento">Ano de nascimento:</label>
+    <input type="text" id="dataDeNascimento" name="dataDeNascimento">
+    <input type="submit" id="enviar" onclick="enviar()" />
+    <div id="resposta"></div>
+
+<script>
+
+  function enviar(){
+
+  	var ano = Number(document.getElementById("dataDeNascimento").value);
+
+
+  	if (ano >= 2002) {
+
+  		document.getElementById("resposta").innerHTML="<br><h1>Você é maior de idade</h1> "  
+
+  	}else  {
+
+  		document.getElementById("resposta").innerHTML="<br><h1>Você é menor de idade</h1> "  
+
+  	}
+
+  }
+
+</script>
+</body>
+</html>
